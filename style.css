@@ -5,63 +5,6 @@
   margin: 0;
   font-family: "Afacad Flux", serif;
 }
-/**The Loader Css Start**/
-.loader-mask {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 99999;
-}
-
-.loader {
-    position: absolute;
-    left: 45%;
-    top: 40%;
-    width: 200px;
-    height: 200px;
-    font-size: 0;
-    color: var(--text-color);
-    display: inline-block;
-    margin: -25px 0 0 -25px;
-    text-indent: -9999em;
-}
-.loader div{
-    font-size: 3rem;
-    color: var(--text-color);
-    justify-content: center;
-    align-items: center;
-    animation-name: loader;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
-}
-@keyframes loader {
-     from{
-        color: #767676;
-        font-weight: bold;
-     }
-     to{
-        color: var(--text-color);
-        font-weight: bold;
-     }
-}
-.loader div{
-    display: inline-block;
-    float: none;
-    color: var(--text-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 500px;
-}
-
-
-/**The Loader Css end**/
 /**================= The Top header(index pages) Section start==================**/
 :root{
    --text-color:rgba(40, 42, 116, 1);
@@ -72,12 +15,12 @@
     background-size: 100% 100%;
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 42.5rem;
 }
 .container-cover{
-    background-color: rgba(244,244,248,0.3);
+    background-color: rgba(244,244,248,0.8);
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    height: auto;
+    height: 42.5rem;
     width: 100%;
     padding-top: 3rem;
     position: relative;
@@ -120,11 +63,11 @@
 .div-button{
     position: relative;
     top: 8rem;
-    left: 6rem;
+    left: 3.8rem;
 }
 .div-button #apply-btn1{
-   height: 2.4rem;
-    width: 100px;
+    height: 2.4rem;
+    width: 150px;
     background-color: var(--bg-color);
     color: rgba(255,255,255,1);
     line-height: 1rem;
@@ -134,19 +77,22 @@
 }
 .div-button #apply-btn2{
     height: 2.4rem;
-     width: 130px;
+     width: 150px;
      background-color: var(--bg-color);
      color: rgba(255,255,255,1);
      line-height: 1rem;
      border-radius: 5px;
      text-align: center;
+     margin-top: 0.5rem;
      padding-top: 0.5rem;
  }
-.div-like{
+.div-like img{
     position: relative;
     float: right;
-    left: 18rem;
+    left: 23rem;
     top: 4rem;
+    width: 18.75rem;
+    height: 8.5rem;
 }
 .our-package{
     background-color: rgba(245, 245, 250, 1);
@@ -192,6 +138,68 @@
     top: 3rem;
     left: -6rem;
 }
+#div-scroll{
+    position: relative;
+    left:-6.5rem;
+    top: -7rem;
+    height: 4.2rem;
+    width: 4.2rem;
+    
+}
+#div-scroll:hover{
+    animation-name: div-scroll;
+    animation-duration: 1s;
+    /* animation-direction: reverse;   */
+}
+#div-scroll2{
+    position: relative;
+    left:-27.5rem;
+    top: -12.5rem;
+    height: 4.2rem;
+    width: 4.2rem;
+}
+#div-scroll2:hover{
+    animation-name: div-scroll2;
+    animation-duration: 1s;
+    
+}
+@keyframes div-scroll2 {
+     from{
+        position: relative;
+        top: -16rem;
+        left:-30rem;
+     }
+     to{
+      position: relative;
+      top: -12.5rem;
+      left:-27rem;
+     }
+}
+#div-scroll3{
+    position: relative;
+    left:5.5rem;
+    top: -11.5rem;
+    height: 4.2rem;
+    width: 4.2rem;
+}
+#div-scroll3:hover{
+    animation-name: div-scroll3;
+    animation-duration: 1s;
+}
+@keyframes div-scroll3 {
+     from{
+        position: relative;
+        left:5.8rem;
+        top: -15.5rem;
+     }
+     to{
+        position: relative;
+    left:5.5rem;
+    top: -11.5rem;
+     }
+}
+/**Our Services index**/
+
 /**==================The Top header(index pages) Section ends ==================**/
 /**==================The Footer Style start=========================**/
 .footer{
@@ -201,13 +209,14 @@
     width: 100%;
     position: relative;
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    /* padding-bottom: 2rem; */
 
 }
 /**===================The Footer style Start==========================**/
 /**===================The About us Section start======================**/
 .common-header{
     background-image: url('background-petter-about.jpg');
+    
     background-size: 100% 100%;
     object-fit: cover;
     width: 100%;
@@ -245,6 +254,19 @@
 }
 /**===================The About us Section ends======================*/
 /**===================The Services  Section start======================*/
+
+#service-card-person{
+    height: 60px;width:70px;border-radius:50%;position: relative;top:3rem;left:1.5rem;
+}
+#service-card-emergancy{
+    height: 60px;width:70px;border-radius:50%;position: relative;top:3rem;left:1.5rem;
+}
+#service-card-bussiness{
+    height: 60px;width:70px;border-radius:50%;position: relative;top:3rem;left:1.5rem;
+}
+#service-card-vahilesh{
+   height: 60px;width:70px;border-radius:50%;position: relative;top:3rem;left:1.5rem;
+}
 .desc-highlight2{
     position: relative;
     top: 3rem;
@@ -271,14 +293,174 @@
    padding-top: 1rem;
    padding-bottom: 5rem;
 }
+#top-contact{
+    position: relative;
+    top: 10rem;
+    
+}
 /**===================The Services  Section ends======================*/
+/**===================CheckEligibillity  top    start======================*/
+#hidden-link{
+    width:50%;padding-top:2rem;
+}
+.box{
+    height: 7.5rem;
+    width: 7.5rem;
+    background-color: var(--bg-color);
+    color: white;
+   position: relative;
+   left: 8rem;
+}
+.box img{
+    position: relative;
+    padding-top: 1.6rem;
+}
+.application-proccess-need{
+    background-color: rgba(245, 245, 250, 1);
+    position: relative;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+#apply-btn1{
+    background-color: var(--bg-color);
+    color: white;
+    max-height: 2.4rem;
+    position: relative;
+    text-align: center;
+    transform: translateY(0.5rem);
+    width: 200px;
+    line-height: 1rem;
+    border-radius: 5px;
+}
+#btn-check{
+    background-color:var(--bg-color);
+    height:3rem;width:200px;
+    color:white;
+    text-decoration:none;
+    padding:0.5rem 3rem 0.5rem 3rem;
+    font-size:1.5rem;
+    border-radius: 5px;
+}
+#btn-check-right{
+   color:var(--bg-color);
+   height:3rem;
+   width:250px;
+   background:white;
+   text-decoration:none;
+   padding:0.5rem 3rem 0.5rem 3rem;
+   font-size:1.5rem;
+   border-radius: 5px;
+   border:1px solid var(--bg-color);
+}
+/**===================CheckEligibillity  top    end======================*/
+/**===================The Finecial start Section ========================**/
+.our-fincial{
+    background-image: url('finacil.jpg');
+    width: 100%;
+    object-fit: cover;
+    height: 37.5rem;
+    background-size: 100% 100%;
+   
+}
+.our-fincial .finacial{
+    position: relative;
+    top: 10rem;
+    
+}
+.finacial h2{
+    color: rgba(250, 165, 26, 1);font-size:36px;
+}
+.finacial p{
+    color: rgba(255, 255, 255, 1);text-align:justify;
+}
+ #getfinacialbtn{
+    text-decoration: none;
+    color: white;
+    background: rgba(250, 165, 26, 1);
+    height: 2.4rem;
+    width: 150px;
+    font-size: 1.4rem;
+    transform: translateY(4.2rem);
+    font-weight: 600;
+    padding: .6rem 1.8rem 0.6rem 1.8rem;
+    border-radius: 5px;
+}
+/**===================The Finecial ends section =========================**/
+/***==================The Dashboard Start ===============================*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(250, 165, 26, 0.5) transparent;
+}
 
+/***==================The Dashboard Ends================================*/
 /**=====================Responsive ==============================**/
 @media (max-width:768px) {
+    #div-scroll {
+        position: relative;
+        left: -4.5rem !important;
+        top: -4rem !important;
+        height: 3.2rem !important;
+        width: 4.2rem !important;
+    }
+    #div-scroll3 {
+        position: relative;
+        left: -0.1rem !important;
+        top: -7.5rem !important;
+        height: 3.2rem !important;
+        width: 3.2rem !important;
+    }
+    #div-scroll2 {
+        position: relative;
+        left: -6.5rem !important;
+        top: -18.5rem !important;
+        height: 3.2rem !important;
+        width: 3.2rem !important;
+    }
+    .container-top-header{
+        background-image: url('Content.png');
+        background-size: 100% 100%;
+        object-fit: cover;
+        width: 100%;
+        height: auto !important;
+    }
+    .container-cover{
+        background-color: rgba(244,244,248,0.3);
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        height:auto !important;
+        width: 100%;
+        padding-top: 3rem;
+        position: relative;
+    }
+    #top-contact{
+        position: relative;
+        top: 0px;
+    }
+    #hidden-link{
+        padding-top: 0;
+        width: 100%;
+    }
     .desc-highlight{
         position: relative;
         top: 0px;
         left: 0px;
+    }
+    #service-card-person{
+        position: relative;
+        top: 0px;
+    }
+    #service-card-emergancy{
+        position: relative;
+        top: 0px;
+    }
+    #service-card-bussiness{
+        position: relative;
+        top: 0px;
+    }
+    #service-card-vahilesh{
+        position: relative;
+        top: 0px;
     }
     #card-loan{
         position: relative;
@@ -300,10 +482,10 @@
     }
     .div-button{
         position: relative;
-        left: 0px;
+        left: -33px;
         top: 0;
     }
-    .div-like{
+    .div-like img{
         position: relative;
         left: 0px;
         top: 0px;
@@ -319,28 +501,113 @@
     .hiden{
         display: none;
     }
-    .loader div{
-        /* background-color: #dc3024; */
-        display: inline-block;
-        float: none;
-        color: var(--text-color);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 200px;
-        height: 200px;
+    #btn-check{
+        background-color:var(--bg-color);
+        height:3rem;
+        width:120px !important;
+        color:white;
+        text-decoration:none;
+        padding:0.5rem 3rem 0.5rem 3rem;
+        font-size: 0.7rem !important;
+        border-radius: 5px;
+    }
+    #btn-check-right{
+       color:var(--bg-color);
+       height:3rem;
+       width:120px !important;
+       background:white;
+       text-decoration:none;
+       padding:0.5rem 3rem 0.5rem 3rem;
+       font-size: 0.7rem !important;
+       border-radius: 5px;
+       border:1px solid var(--bg-color);
+       
+    }
+    .our-fincial .finacial{
+        position: relative;
+        top: 7rem;
         
     }
-    .loader {
-        position: absolute;
-        left: 30%;
-        top: 30%;
-        width: 200px;
-        height: 200px;
-        font-size: 0;
-        color: var(--text-color);
-        display: inline-block;
-        margin: -25px 0 0 -25px;
-        text-indent: -9999em;
+    .finacial h2{
+        color: rgba(255, 255, 255, 1);
+        font-size:36px;
+        font-weight: 700;
     }
+    .gap-5 {
+        gap: 1rem !important;
+    }
+}
+
+/**The Am=nimation section header**/
+@keyframes div-scroll {
+      from{
+          position: relative;
+          top: -11.5rem;
+          left:-3.5rem;
+      }
+
+      to{
+        position: relative;
+        bottom: 0px;
+      }
+
+}
+
+
+/** The media 320 ***/
+@media (max-width:320px) {
+    .box{
+        height: 7.5rem !important;
+        width: 7.5rem !important;
+        background-color: var(--bg-color);
+        color: white;
+       position: relative;
+       left: 5rem !important;
+    }  
+    .div-button #apply-btn1{
+        height: 2.4rem;
+        width: 7.5rem;
+        background-color: var(--bg-color);
+        color: rgba(255,255,255,1);
+        line-height: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .div-button #apply-btn2{
+        height: 2.4rem;
+         width: 7.5rem;
+         background-color: var(--bg-color);
+         color: rgba(255,255,255,1);
+         line-height: 1rem;
+         border-radius: 5px;
+         text-align: center;
+         margin-top: 0.5rem;
+         padding-top: 0.5rem;
+     }  
+}
+
+/** The Medai Queries 400**/
+@media (max-width:400) {
+    .div-button #apply-btn1{
+        height: 2.4rem;
+        width: 7.5rem;
+        background-color: var(--bg-color);
+        color: rgba(255,255,255,1);
+        line-height: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+    .div-button #apply-btn2{
+        height: 2.4rem;
+         width: 7.5rem;
+         background-color: var(--bg-color);
+         color: rgba(255,255,255,1);
+         line-height: 1rem;
+         border-radius: 5px;
+         text-align: center;
+         margin-top: 0.5rem;
+         padding-top: 0.5rem;
+     }
 }
